@@ -1,0 +1,512 @@
+/***********************************/
+/*          SECTION HEADER         */
+/***********************************/
+/* $primary-1: red; */
+.header {
+    position: relative;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+    padding: 1.2rem 3.6rem;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-nav-list{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited{
+    padding: 1.2rem 2.6rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    transition: 0.3s;
+    transition: 0.3s;
+    position: relative;
+
+}
+
+.main-nav-link::before{
+    content: " ";
+    width: 0;
+    padding-bottom: 0;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.main-nav-link:hover::before,
+.main-nav-link:active::before{
+    width: 100%;
+    padding-bottom: 0.2rem;
+    box-shadow: 2rem 2rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.logo a{
+    font-size: 1.6rem;
+}
+
+.close {
+    display: none;
+}
+
+
+.mobile-nav-btn svg {
+    width: 2.4rem;
+    padding: 2rem;
+}
+
+
+/*****************************/
+/*        SECTION HERO     */
+/*****************************/
+.section-hero{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('pic/banner.JPG') center no-repeat;
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+}
+
+.hero-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-discription{
+    text-align: center;
+}
+
+/* .hero-btn-box{
+    display: inline;
+    gap: 2rem;
+} */
+
+.hero-btn, .about-btn{
+    border: none;
+    padding: 1.4rem 5rem;
+    margin-right: 2rem;
+}
+
+.hero-btn a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+}
+.main{
+    background-color: #e7a01d;
+    transition: all 0.3s;
+}
+
+.main:hover{
+    background-color: transparent;
+    border: 0.1rem solid #fff;
+}
+
+
+.sub-main{
+    background-color: transparent;
+    border: 0.1rem solid #fff;
+    transition: all 0.3s;
+}
+
+.sub-main:hover{
+    background-color: #e7a01d;
+    border: none;
+}
+
+
+
+
+
+
+/*****************************/
+/*        SECTION NUMBER     */
+/*****************************/
+
+
+.number-container{
+    width: 80%;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    /* height: 20rem; */
+
+}
+
+
+.num-box-1{
+    box-shadow: 0.8rem 0 0.8rem 0 rgba(0, 0, 0, 0.4);
+    background-color: #fff;
+    padding: 2rem 0;
+    /* height: 8rem; */
+}
+
+.num-box-1 .paragraph{
+    color: #333;
+    font-size: 1.4rem; 
+
+}
+
+.num{
+    font-size: 4.4rem;
+    margin-bottom: 1rem;
+}
+
+
+
+/*****************************/
+/*        SECTION ABOUT      */
+/*****************************/
+.section-about{
+    padding: 10rem;
+    margin-top: 8rem;
+}
+
+.about-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 3rem;
+}
+.about-img img{
+    width: 100%;
+    /* height: 100%; */
+}
+
+.abuout-discription{
+    /* padding: 2rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.abuout-discription .paragraph{
+    color: #333;
+    line-height: 1.4;
+    font-size: 1.6rem;
+}
+
+.about-btn {
+    color: #fff;
+    font-size: 1.4rem;
+    transition: 0.3s;
+}
+
+.about-btn:hover{
+    border: 0.2rem solid #e7a01d;
+    color: #e7a01d;
+}
+
+.span-1{
+    border: 2rem solid #e7a01d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10rem;
+    height: 10rem;
+    z-index: -9999;
+}
+
+.span-2{
+    border: 2rem solid #fdfdfd;
+    position: absolute;
+    top: 8%;
+    left: -6%;
+    width: 30%;
+    height: auto;
+    rotate: 140deg;
+    z-index: -99;
+    background-color: #fff;
+}
+
+
+/*****************************/
+/*        SECTION WHAT      */
+/*****************************/
+
+
+
+.what-container{
+    padding: 10rem;
+}
+
+.what-discription{
+    text-align: center;
+}
+.what-box{
+    padding: 2rem;
+    padding-left: 3rem;
+    box-shadow: 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.4);
+    background-color: #fff;
+
+}
+
+.what-link a{
+    text-decoration: none;
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.what-box-main{
+    margin-top: 6rem;
+}
+
+.what-box .paragraph{
+    color: #333;
+}
+
+.what-box .heading-secondary{
+    font-size: 2.4rem;
+}
+
+.what-box span{
+    font-size: 5.2rem;
+    color: #e7a01d;
+}
+
+.what-container .grid--3--cols{
+    gap: 2rem;
+}
+
+.what-box-submain{
+    position: relative;
+    /* background-color: aqua; */
+    padding: 2rem;
+}
+
+.span-3{
+    border: 1.2rem solid #e7a01d;
+    position: absolute;
+    top: 65%;
+    left: 0;
+    width: 12rem;
+    height: 12rem;
+    z-index: -9999;
+}
+
+.span-4{
+    border: 2rem solid #fdfdfd;
+    position: absolute;
+    top: 70%;
+    left: -6%;
+    width: 20%;
+    height: auto;
+    rotate: -130deg;
+    z-index: -99;
+    background-color: #fdfdfd;
+}
+
+.span-5{
+    border: 1.2rem solid #e7a01d;
+    position: absolute;
+    top: 15%;
+    left: 90%;
+    width: 12rem;
+    height: 12rem;
+    z-index: -9999;
+}
+
+.span-6{
+    border: 2rem solid #fdfdfd;
+    position: absolute;
+    top: 28%;
+    left: 86%;
+    width: 16%;
+    height: auto;
+    rotate: -135deg;
+    z-index: -99;
+    background-color: #fdfdfd;
+}
+
+
+
+
+/************************************/
+/*        SECTION CONSULTATION      */
+/************************************/
+.consultation-container{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url(pic/img1.jpg) no-repeat center;
+    background-size: cover;
+    padding: 5rem;
+    text-align: center;
+    color: #fff;
+    margin: 8rem 0;
+}
+
+
+
+
+/********************************/
+/*         SECTION REVIEW      */
+/*******************************/
+.review-container{
+    padding: 10rem;
+    position: relative;
+}
+
+
+.review-box{
+    box-shadow: 0.2rem 0 0.6rem 0 rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    background-color: #fff;
+
+}
+
+.review-box .paragraph{
+    color: #333;
+}
+
+.author-description{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+
+}
+
+.author-img img{
+    width: 6rem;
+    border-radius: 50%;
+    box-shadow: 0.2rem 0 0.4rem 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.review-submain{
+    position: relative;
+}
+
+.span-7{
+    border: 1.2rem solid #e7a01d;
+    position: absolute;
+    top: 53%;
+    left: 92%;
+    width: 12rem;
+    height: 12rem;
+    z-index: -9999;
+}
+
+.span-8{
+    border: 2rem solid #fdfdfd;
+    position: absolute;
+    top: 65%;
+    left: 89%;
+    width: 16%;
+    height: auto;
+    rotate: 135deg;
+    z-index: -99;
+    background-color: #fdfdfd;
+}
+
+
+/******************************/
+/*        SECTION CONTACT     */
+/******************************/
+.section-contact{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(pic/banner.JPG);
+    text-align: center;
+    padding: 10rem 10rem 16rem 10rem;
+    color: #fff;
+}
+
+.contact-form input, textarea{
+    width: 30%;
+    height: 3rem;
+    padding: 1rem;
+    margin-top: 0.6rem;
+}
+
+.contact-form textarea{
+    height: 20rem;
+}
+
+.contact-form .submit{
+    background-color: #e7a01d;
+    color: #fff;
+    font-size: 1.4rem;
+    border: none;
+    padding: 0;
+    height: 4rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.contact-form .submit:hover{
+    background-color: transparent;
+    border: inset 0.1rem #e7a01d;
+    color: #e7a01d;
+}
+
+.others-box-main{
+    top: -10%;
+    padding: 0 10rem;
+}
+
+.others-icon{
+    margin-bottom: 2rem;
+    width: 8%;
+}
+
+.others-box{
+    padding: 2rem;
+    box-shadow: 0.2rem 0 0.4rem 0 rgba(0, 0, 0, 0.3);
+    text-align: center;
+    background-color: #fff;
+}
+
+
+.others-container{
+    position: absolute;
+    top: 92%;
+    margin-bottom: 10rem;
+}
+
+
+.section-others{
+    margin-bottom: 10rem;
+} 
+
+
+
+
+
+
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 18rem;
+    margin: 5rem 0;
+    /* text-align: center; */
+}
+
+.footer-container .logo{
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-container .paragraph{
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 500;
+}

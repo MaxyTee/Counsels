@@ -1,0 +1,81 @@
+/* 
+--------01 TYPOGRAPHY SYSTEM 
+
+- FONT SIZE SYSTEM {px}
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 /98
+
+---- 07 WHITESPACE
+- SPACING SYSTEM {px}
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 
+*/
+ 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #fdfdfd;
+}
+
+
+.grid{
+    display: grid;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.grid--3--cols{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.grid--4--cols{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.grid--2--cols{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+}
+
+
+.heading-primary{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 6.2rem;
+    color: #fff;
+    line-height: 0.9;
+    margin-bottom: 1rem;
+    font-weight: 100;
+}
+
+.heading-secondary{
+    font-size: 5.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    margin-bottom: 2rem;
+}
+
+.paragraph{
+    color: #fff;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.small{
+    color: #e7a01d;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+    font-size: 1.2rem;
+}
+
+.relative{
+    position: relative;
+}
